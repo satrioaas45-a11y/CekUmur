@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website cek umur instan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- EFEK GLOW ASAP KUNING -->
+    <div class="glow-container">
+      <p class="creator">Made by Satrio</p>
+        <div class="smoke-glow smoke-1"></div>
+        <div class="smoke-glow smoke-2"></div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Umur Kamu</h1>
+            <p class="subtitle">Cari tahu berapa umurmu tahun ini!</p>
+            
+            <div class="input-group">
+                <label for="nama">Nama Kamu</label>
+                <input type="text" id="nama" placeholder="Masukkan nama panggilan...">
+            </div>
+            
+            <!-- Kotak Tanggal, Bulan, dan Tahun disejajarkan ke samping -->
+            <div class="input-group input-row">
+                <div>
+                    <label for="tanggalLahir">Tanggal</label>
+                    <input type="number" id="tanggalLahir" placeholder="DD" min="1" max="31">
+                </div>
+                <div>
+                    <label for="bulanLahir">Bulan</label>
+                    <input type="number" id="bulanLahir" placeholder="MM" min="1" max="12">
+                </div>
+                <div>
+                    <label for="tahunLahir">Tahun</label>
+                    <input type="number" id="tahunLahir" placeholder="YYYY">
+                </div>
+            </div>
+            
+            <button class="btn-tebak" id="btnTebak">Cek umur</button>
+        </div>
+    </div>
+
+    
+    <!-- POPUP HASIL -->
+<div class="popup" id="popup">
+    <div class="popup-card">
+        <h2>🕵️ Data Ditemukan</h2>
+        <p id="hasilText"></p>
+        <button class="close-popup" onclick="tutupPopup()">
+            Tutup
+        </button>
+    </div>
+</div>
+
+
+    <!-- Script Logika Penebak Umur -->
+    <script src="script.js"></script>
+</body>
+</html>
